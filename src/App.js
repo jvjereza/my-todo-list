@@ -78,13 +78,13 @@ function App() {
         <label htmlFor="new-task-name" className="form-label">
           Task Name
         </label>
-        <input
+        <input>
           type="text"
           className="form-control"
           id="new-task-name"
           value={newTaskName}
           onChange={handleNewTaskNameChange}
-        />
+       </input>
       </div>
       <div className="mb-3">
         <label htmlFor="new-task-remarks" className="form-label">
