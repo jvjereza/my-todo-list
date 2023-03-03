@@ -75,17 +75,18 @@ function App() {
     <div className="container my-4">
       <h1>My Todo List</h1>
       <div className="mb-3">
-        <label htmlFor="new-task-name" className="form-label">
-          Task Name
-        </label>
-        <input>
-          type="text"
-          className="form-control"
-          id="new-task-name"
-          value={newTaskName}
-          onChange={handleNewTaskNameChange}
-       </input>
-      </div>
+  <label htmlFor="new-task-name" className="form-label">
+    Task Name
+  </label>
+  <input
+    type="text"
+    className="form-control"
+    id="new-task-name"
+    value={newTaskName}
+    onChange={handleNewTaskNameChange}
+  />
+</div>
+
       <div className="mb-3">
         <label htmlFor="new-task-remarks" className="form-label">
           Remarks
@@ -102,20 +103,15 @@ function App() {
         Add Task
       </button>
       <table className="table mt-3">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Task Name</th>
-            <th>Remarks</th>
-            <th></th>
-          </tr>
-          <tr>
-        <th></th>
-        <th>Task Name</th>
-        <th>Remarks</th>
-        <th></th>
-      </tr>
-    </thead>
+      <thead>
+  <tr>
+    <th></th>
+    <th>Task Name</th>
+    <th>Remarks</th>
+    <th></th>
+  </tr>
+</thead>
+
     <tbody>
       {tasks.map((task) => (
         <tr key={task.id}>
